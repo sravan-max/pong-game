@@ -1,0 +1,101 @@
+body{
+    font-family: "Ysabeau SC", serif;
+    height:100dvh;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    color: rgba(255,255,255,0.9);
+    overflow: hidden;
+  }
+  
+  .GameArea{
+      position: absolute;
+      height : 208px;
+      width : 240.5px;
+      background: rgba(7,26,49,0.6);
+      top : 186px;
+      border: 6px solid rgba(138, 138, 138, 0.9);
+      border-radius: 4px;
+      backdrop-filter: blur(4px);
+      transform: perspective(599px) rotateX(23deg) scaleX(1.01) scaleY(1.1) ;
+  }
+  
+  .bg{
+      position: absolute;
+      height: 750px;
+      z-index: -1;
+  }  
+  
+  .paddle{
+      height: 33px;
+      width: 5px;
+      background-color: aliceblue;
+      position: absolute;
+      top: 95px;
+      box-shadow: 4px 10px 4px rgbs(0,0,0,0.9);
+  }
+  
+  .Paddle2{
+      right: 0;
+  }
+  
+  .ball{
+      height: 12px;
+      width: 9px;
+      background: aliceblue;
+      border-radius: 4px;
+      position: absolute;
+      left: 114px;
+      top: 95px;
+      box-shadow: 4px 10px 4px rgb(0,0,0,0.9);
+  }
+  
+  .net{
+      position: absolute;
+      border-right:3px dotted aliceblue;
+      height: 96%;
+      left: calc(50% - 2px);
+      top:2%;
+  }
+  
+  .title{
+      position: absolute;
+      top : 44px; 
+  }
+  
+  .startgametext{
+      position: absolute;
+      top: 60%;
+      left:50%;
+      z-index: 1;
+      margin: 0;
+      background-color: #111;
+      padding: 2px 4px 8px 4px;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      border-radius: 4px;
+  }
+  
+  .score{
+      position: absolute;
+      display: flex;
+      height: 170px;
+      width: 50px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .player1score{
+      left: calc(50% - 152px);
+  }
+  .player2score{
+      right: calc(50% - 152px);
+  }
+  
+  .vignett{
+      height: 100dvh;
+      width: 100dvh;
+      background:  radial-gradient(circle,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 100%);
+  }

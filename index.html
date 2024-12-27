@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+    <title>Ping Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1 class="title">Pong</h1>
+    <span class="score player1score" id="player1score">0</span>
+    <span class="score player2score" id="player2score">0</span>
+    <h3 class="startgametext" id="startgametext">Press any key to start</h3>
+    <div class="GameArea">
+        <div class="Paddle1 paddle" id="Paddlel"></div>
+        <div class="Paddle2 paddle" id="Paddle2"></div>
+        <div class="ball" id="ball"></div>
+        <div class="net"></div>
+    </div>
+    <img src="\assets\machine.png" alt="Ping pong machine" class="bg">
+    <div class="vignett"></div>
+    <audio src="\assets\loss.wav" id = "losssound"></audio>
+    <audio src="\assets\wall.wav" id = "wallsound"></audio>
+    <audio src="\assets\paddle.wav" id = "paddlesound" ></audio>
+</body>
+</html>
